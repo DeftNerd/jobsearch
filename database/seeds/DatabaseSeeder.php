@@ -16,11 +16,9 @@ class DatabaseSeeder extends Seeder {
 
 		DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
-		/*
-		 * Auth Based Seeders
-		 */
 		$this->call('UserTableSeeder');
 		$this->call('AccessTableSeeder');
+		$this->call('TagTableSeeder');
 
 		DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 	}

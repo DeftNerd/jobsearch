@@ -1,0 +1,122 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use App\Tag as Tag;
+
+class TagTableSeeder extends Seeder
+{
+    public function run()
+    {
+
+      DB::table('tags')->truncate();
+
+      Tag::create(['name' => 'A/B Testing']);
+      Tag::create(['name' => 'Agile']);
+      Tag::create(['name' => 'Analytics']);
+      Tag::create(['name' => 'Android']);
+      Tag::create(['name' => 'Angular']);
+      Tag::create(['name' => 'Ansible']);
+      Tag::create(['name' => 'Apache']);
+      Tag::create(['name' => 'Asterisk']);
+      Tag::create(['name' => 'AWS']);
+      Tag::create(['name' => 'Bachelors Degree']);
+      Tag::create(['name' => 'BackboneJS']);
+      Tag::create(['name' => 'Bash']);
+      Tag::create(['name' => 'Behat']);
+      Tag::create(['name' => 'BigQuery']);
+      Tag::create(['name' => 'Bitcoin']);
+      Tag::create(['name' => 'BlockChain']);
+      Tag::create(['name' => 'C++']);
+      Tag::create(['name' => 'Cassandra']);
+      Tag::create(['name' => 'CentOS']);
+      Tag::create(['name' => 'Chef']);
+      Tag::create(['name' => 'Clojure']);
+      Tag::create(['name' => 'Coffeescript']);
+      Tag::create(['name' => 'Composer']);
+      Tag::create(['name' => 'Continuous Integration']);
+      Tag::create(['name' => 'CoreOS']);
+      Tag::create(['name' => 'CouchDB']);
+      Tag::create(['name' => 'Crypto']);
+      Tag::create(['name' => 'CSS']);
+      Tag::create(['name' => 'Debian']);
+      Tag::create(['name' => 'Django']);
+      Tag::create(['name' => 'Docker']);
+      Tag::create(['name' => 'Elastic Search']);
+      Tag::create(['name' => 'Ember.js']);
+      Tag::create(['name' => 'Envoyer']);
+      Tag::create(['name' => 'Exchange']);
+      Tag::create(['name' => 'Firewalls']);
+      Tag::create(['name' => 'Flash']);
+      Tag::create(['name' => 'fluentd']);
+      Tag::create(['name' => 'Gearman']);
+      Tag::create(['name' => 'Git']);
+      Tag::create(['name' => 'Github']);
+      Tag::create(['name' => 'Go']);
+      Tag::create(['name' => 'Hadoop']);
+      Tag::create(['name' => 'Heroku']);
+      Tag::create(['name' => 'HHVM']);
+      Tag::create(['name' => 'HIPAA']);
+      Tag::create(['name' => 'Hive']);
+      Tag::create(['name' => 'HTML5']);
+      Tag::create(['name' => 'Hyper-V']);
+      Tag::create(['name' => 'Icinga']);
+      Tag::create(['name' => 'IDS']);
+      Tag::create(['name' => 'Impala']);
+      Tag::create(['name' => 'iOS']);
+      Tag::create(['name' => 'Java']);
+      Tag::create(['name' => 'JavaScript']);
+      Tag::create(['name' => 'Jenkins']);
+      Tag::create(['name' => 'jQuery']);
+      Tag::create(['name' => 'Kafka']);
+      Tag::create(['name' => 'Key Management']);
+      Tag::create(['name' => 'Knockout']);
+      Tag::create(['name' => 'KVM']);
+      Tag::create(['name' => 'LAMP']);
+      Tag::create(['name' => 'Laravel']);
+      Tag::create(['name' => 'Linux']);
+      Tag::create(['name' => 'logstash']);
+      Tag::create(['name' => 'Map Reduce']);
+      Tag::create(['name' => 'MariaDB']);
+      Tag::create(['name' => 'Masters Degree']);
+      Tag::create(['name' => 'Memcache']);
+      Tag::create(['name' => 'Mercurial']);
+      Tag::create(['name' => 'MongoDB']);
+      Tag::create(['name' => 'MySQL']);
+      Tag::create(['name' => 'Nagios']);
+      Tag::create(['name' => 'New Relic']);
+      Tag::create(['name' => 'Nginx']);
+      Tag::create(['name' => 'NodeJS']);
+      Tag::create(['name' => 'NoSQL']);
+      Tag::create(['name' => 'Obj-C']);
+      Tag::create(['name' => 'OpenStack']);
+      Tag::create(['name' => 'OpenVZ']);
+      Tag::create(['name' => 'PCI']);
+      Tag::create(['name' => 'Penetration Testing']);
+      Tag::create(['name' => 'Perl']);
+      Tag::create(['name' => 'PHP']);
+      Tag::create(['name' => 'PKI']);
+      Tag::create(['name' => 'PostgreSQL']);
+      Tag::create(['name' => 'Puppet']);
+      Tag::create(['name' => 'Python']);
+      Tag::create(['name' => 'Rails']);
+      Tag::create(['name' => 'React']);
+      Tag::create(['name' => 'Redis']);
+      Tag::create(['name' => 'RethinkDB']);
+      Tag::create(['name' => 'Ruby']);
+      Tag::create(['name' => 'Scala']);
+      Tag::create(['name' => 'Security Testing']);
+      Tag::create(['name' => 'Sidekiq']);
+      Tag::create(['name' => 'Spark']);
+      Tag::create(['name' => 'SSL']);
+      Tag::create(['name' => 'Symphony2']);
+      Tag::create(['name' => 'Tornado']);
+      Tag::create(['name' => 'Unit Testing']);
+      Tag::create(['name' => 'Vagrant']);
+      Tag::create(['name' => 'vCenter']);
+      Tag::create(['name' => 'VMWare']);
+      Tag::create(['name' => 'VoIP']);
+      Tag::create(['name' => 'Vue.js']);
+      Tag::create(['name' => 'Windows Server']);
+    }
+}
