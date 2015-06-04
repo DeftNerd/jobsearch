@@ -11,7 +11,8 @@
         "stripe/stripe-php": "1.*",
         "twbs/bootstrap": "3.*",
         "twbs/bootstrap-sass": "3.*",
-        "fortawesome/font-awesome": "4.*"
+        "fortawesome/font-awesome": "4.*",
+		"cviebrock/eloquent-sluggable": ">=3.0.0-alpha"
 	},
 	"require-dev": {
         "mockery/mockery": "0.9.*",

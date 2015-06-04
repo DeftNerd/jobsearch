@@ -34,7 +34,12 @@
             @include('includes.partials.messages')
             @yield('content')
         </div><!-- container -->
-
+        <footer class="footer" style="background-color:#c2c2c2">
+          <div class="row container-fluid">
+            <div class="col-xs-6">Another project by <a href="https://deftnerd.com">Adam Brown</a> / <a href="https://techendeavors.com">TechEndeavors</a></div>
+            <div class="col-xs-6 text-right"><a href="https://github.com/DeftNerd/jobsearch">Source code at Github</a></div>
+          </div>
+        </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{asset('js/vendor/jquery-1.11.2.min.js')}}"><\/script>')</script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
