@@ -158,7 +158,6 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'App\Providers\MacroServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
-		'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 	],
 
 	/*

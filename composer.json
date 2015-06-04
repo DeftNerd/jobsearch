@@ -5,20 +5,18 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.1.*",
-        "illuminate/html" : "5.*",
-        "laravel/socialite" : "~2.0",
-        "stripe/stripe-php": "1.*",
-        "twbs/bootstrap": "3.*",
-        "twbs/bootstrap-sass": "3.*",
-        "fortawesome/font-awesome": "4.*",
-		"cviebrock/eloquent-sluggable": ">=3.0.0-alpha"
+		"laravel/framework": "~5",
+    "illuminate/html" : "~5",
+    "laravel/socialite" : "~2",
+    "twbs/bootstrap": "~3",
+    "twbs/bootstrap-sass": "~3",
+    "fortawesome/font-awesome": "~4"
 	},
 	"require-dev": {
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "phpspec/phpspec": "~2.1",
-		"laracasts/generators": "~1.1"
+    "mockery/mockery": "~0.9",
+    "phpunit/phpunit": "~4",
+    "phpspec/phpspec": "~2",
+		"laracasts/generators": "~1"
 	},
 	"autoload": {
 		"classmap": [
@@ -53,5 +51,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-    "minimum-stability" : "dev"
+    "minimum-stability" : "stable"
 }

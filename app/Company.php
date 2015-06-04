@@ -1,10 +1,8 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Cviebrock\EloquentSluggable\SluggableInterface;
-use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Company extends Model implements SluggableInterface
+class Company extends Model
 {
 
   use SluggableTrait;
