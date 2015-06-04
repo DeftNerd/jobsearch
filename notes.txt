@@ -1,0 +1,38 @@
+Possible status brainstorming
+
+Researching company
+  - Don't Like Them
+    Don't Apply
+  + Like Them
+    Customizing Resume
+    Draft Cover letter
+    Send Resume and Cover Letter
+    + Receive Positive Reply
+      Initial Interview
+      + Good Fit?
+        Schedule Follow-up Interview
+      - Bad Fit?
+        Send Thank you and dismissal letter
+    - Receive Negative Reply
+      Send thank you for your consideration
+      Ask for feedback
+      Request forwarding resume to any potential leads
+    ? No Reply
+      Send follow-up email 3 days later
+      ? No Reply
+        Send follow-up email 3 days later
+          ? No Reply
+            Close
+
+
+
+
+Stage
+1. Research
+2. Application
+3. Introductions
+4. Interviews
+5. Negotiations
+6. Rejection Followup
+7. Closed
+*  Waiting for Reply

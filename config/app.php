@@ -9,7 +9,7 @@ return [
 	|
 	| The application name for use within the UI of the application
 	*/
-	'name' => 'Application',
+	'name' => 'Adam Brown\'s Job Search',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ return [
 	|
 	*/
 
-	'url' => env('APP_URL'),
+	'url' => env('APP_URL', 'http://localhost'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -15,8 +15,8 @@ return [
 	*/
 
 	'mailgun' => [
-		'domain' => '',
-		'secret' => '',
+		'domain' => 'jobsearch.deftnerd.com',
+		'secret' => 'key-2piqrwqbvj5t6xli-qiohe4w7n7uio24',
 	],
 
 	'mandrill' => [

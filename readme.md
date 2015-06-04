@@ -1,14 +1,4 @@
-## Laravel 5.* Boilerplate (Currently 5.1@dev)
-
-[![Project Status](http://stillmaintained.com/rappasoft/Laravel-5-Boilerplate.png)](http://stillmaintained.com/rappasoft/Laravel-5-Boilerplate) [![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate) [![Total Downloads](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/downloads)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate) [![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-5-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-5-boilerplate)
-
-### Demo:
-
-[Click here for a demo](http://l5.rappasoft.com)
-```
-Username: admin@admin.com
-Password: 1234
-```
+## Job Search organization site
 
 ### Features:
 
@@ -71,16 +61,16 @@ Password: 1234
     APP_DEBUG=true
     APP_URL=http://localhost
     APP_KEY=WILL BE GENERATED
-    
+
     DB_HOST=localhost
     DB_DATABASE=laravel
     DB_USERNAME=root
     DB_PASSWORD=root
-    
+
     CACHE_DRIVER=file
     SESSION_DRIVER=file
     QUEUE_DRIVER=sync
-    
+
     MAIL_DRIVER=smtp
     MAIL_HOST=mailtrap.io
     MAIL_PORT=2525
@@ -88,22 +78,22 @@ Password: 1234
     MAIL_PASSWORD=null
     MAIL_FROM=
     MAIL_NAME=
-    
+
     STRIPE_KEY=
     STRIPE_SECRET=
-    
+
     GITHUB_CLIENT_ID=
     GITHUB_CLIENT_SECRET=
     GITHUB_REDIRECT=
-    
+
     FACEBOOK_CLIENT_ID=
     FACEBOOK_CLIENT_SECRET=
     FACEBOOK_REDIRECT=
-    
+
     TWITTER_CLIENT_ID
     TWITTER_CLIENT_SECRET
     TWITTER_REDIRECT=
-    
+
     GOOGLE_CLIENT_ID=
     GOOGLE_CLIENT_SECRET=
     GOOGLE_REDIRECT=
@@ -322,7 +312,7 @@ If you would like to take advantage of the methods used by Access's route/contro
 
 Which will give you methods in your middleware to grab route assets or controller parameters. You can then add methods to your middleware to grab assets that access doesn't grab by default and take advantage of them.
 
-**Note:** If middleware is applied to both the controller and a route group, the controller will take precedence. 
+**Note:** If middleware is applied to both the controller and a route group, the controller will take precedence.
 
 <a name="blade_extensions"/>
 ### Blade Extensions
@@ -360,7 +350,7 @@ You can add more extensions by editing app/Blade/Access/AccessBladeExtender.php
 To configure socialite, add your credentials to your .env file. The redirects must follow the convention ```http://mysite.com/auth/login/SERVICE```. Available services are ```github```, ```facebook```, ```twitter```, and ```google```. Links to each are included in ```login.blade.php```.
 
 If you are getting a ```cURL error 60``` on localhost, follow [these directions](http://stackoverflow.com/questions/28635295/laravel-socialite-testing-on-localhost-ssl-certificate-issue).
-    
+
 ## Troubleshooting
 
 If for any reason something goes wrong, try each of the following:
@@ -370,21 +360,7 @@ Delete the `composer.lock` file
 Run the `dumpautoload` command
 
        $ composer dumpautoload -o
-       
+
 If the above fails to fix, and the command line is referencing errors in `compiled.php`, do the following:
-       
+
 Delete the `storage/framework/compiled.php` file
-       
-**If all of the above don't work please [report here](https://github.com/rappasoft/Laravel-5-Boilerplate/issues).**
-    
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

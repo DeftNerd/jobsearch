@@ -25,7 +25,7 @@ class AuthController extends Controller {
 	 * @return \Illuminate\View\View
 	 */
 	public function getRegister() {
-		return view('frontend.auth.register');
+		return redirect()->route('frontend.dashboard');
 	}
 
 	/**

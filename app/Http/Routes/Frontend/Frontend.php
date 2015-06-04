@@ -6,6 +6,11 @@
 Route::get('/', ['as' => 'home', 'uses' => 'FrontendController@index']);
 Route::get('macros', 'FrontendController@macros');
 
+Route::get('contactme',
+	['as' => 'contactme', 'uses' => 'ContactMeController@create']);
+Route::post('contactme',
+		['as' => 'contactme_store', 'uses' => 'ContactMeController@store']);
+
 /**
  * These frontend controllers require the user to be logged in
  */

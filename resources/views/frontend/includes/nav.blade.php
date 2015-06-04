@@ -13,13 +13,12 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li>{!! link_to('/', 'Home') !!}</li>
-					<li>{!! link_to('macros', 'Macros') !!}</li>
+					<li>{!! link_to('contactme', 'Contact Me') !!}</li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li>{!! link_to('auth/login', 'Login') !!}</li>
-						<li>{!! link_to('auth/register', 'Register') !!}</li>
 					@else
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
