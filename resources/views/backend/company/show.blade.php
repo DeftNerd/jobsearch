@@ -96,4 +96,8 @@
       </div><!-- panel -->
     @endforelse
 
+    <div class="pull-right">
+      {!! link_to_route('admin.job.create', $title ="Add Job", $parameters = array('company_slug' => $company->slug), $attributes = array('class' => 'btn btn-default pull-right')) !!}
+    </div>
+
 @stop

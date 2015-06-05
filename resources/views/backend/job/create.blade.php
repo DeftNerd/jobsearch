@@ -23,6 +23,19 @@
     <div class="panel panel-default">
       <div class="panel-body">
         {!! Form::open(array('url' => 'admin/job', 'class' => 'form', 'novalidate' => 'novalidate')) !!}
+
+        @if (isset($company_slug))
+          <div class="form-group">
+            {!! Form::label('Company') !!}
+            {!! Form::select('company_slug', $companies, $company_slug) !!}
+          </div>
+        @else
+        <div class="form-group">
+          {!! Form::label('Company') !!}
+          {!! Form::select('company_slug', $companies) !!}
+        </div>
+        @endif
+
         <div class="form-group">
           {!! Form::label('Title') !!}
           {!! Form::text('title', null,
@@ -37,6 +50,14 @@
               array('required',
                     'class'=>'form-control',
                     'placeholder'=>'Job Listing URL')) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('Job Description') !!}
+          {!! Form::textarea('description', null,
+              array('required',
+                    'class'=>'form-control',
+                    'placeholder'=>'Job Description')) !!}
         </div>
 
         <div class="form-group">
@@ -119,7 +140,7 @@
             'negotiations' => 'Negotiating Acceptance',
             'rejection' => 'Rejection Followup',
             'closed' => 'Closed',
-          ), 'researching'); !!}
+          ), 'researching') !!}
         </div>
 
         <div class="form-group">
