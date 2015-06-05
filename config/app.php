@@ -159,6 +159,7 @@ return [
 		'App\Providers\MacroServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
 		'Cviebrock\EloquentSluggable\SluggableServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 	],
 
 	/*

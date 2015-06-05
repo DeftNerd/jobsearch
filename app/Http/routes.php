@@ -36,6 +36,7 @@ Route::group(['namespace' => 'Backend'], function ()
 		{
 			Route::get('dashboard', ['as' => 'backend.dashboard', 'uses' => 'DashboardController@index']);
 			require_once(__DIR__ . "/Routes/Backend/Access.php");
+			require_once(__DIR__ . "/Routes/Backend/Other.php");
 		});
 	});
 });

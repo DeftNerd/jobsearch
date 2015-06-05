@@ -37,83 +37,33 @@
 		</div>
 
 		<div class="col-xs-12">
-			<div class="panel panel-default">
-				<div class="panel-heading"> Jobs I've Applied For</div>
-					<div class="panel-body">
-							<table class="table table-bordered table-striped">
-								<thead>
-									<tr>
-										<th>Company</th>
-										<th>Position</th>
-										<th>Location</th>
-										<th>Stage</th>
-										<th>Last Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Dummy Company 1</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Research</td>
-										<td>1 day ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 2</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Research</td>
-										<td class="warning">2 day ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 3</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Application</td>
-										<td class="danger">3 days ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 4</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Introductions</td>
-										<td>1 day ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 5</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Interviews</td>
-										<td>1 day ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 6</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Negotiations</td>
-										<td>1 day ago</td>
-									</tr>
-									<tr>
-										<td>Dummy Company 7</td>
-										<td>Dummy Job Title</td>
-										<td>Anytown, US</td>
-										<td>Rejection Followup</td>
-										<td>1 day ago</td>
-									</tr>
-									<tr>
-										<td><s>Dummy Company 8</s></td>
-										<td><s>Dummy Job Title</s></td>
-										<td><s>Anytown, US</s></td>
-										<td><s>Closed</s></td>
-										<td><s>4 days ago</s></td>
-									</tr>
-
-
-								</tbody>
-							</table>
-					</div>
-				</div>
-			</div>
+			<table class="table table-bordered table-striped">
+				<caption>Jobs I'm Interested In</caption>
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Position</th>
+						<th>Location</th>
+						<th>Stage</th>
+						<th>Last Action</th>
+					</tr>
+				</thead>
+				<tbody>
+				@forelse ($jobs as $job)
+					<tr>
+						<td>{{ $job->company->name }}</td>
+						<td>{{ $job->title }}</td>
+						<td>{{ $job->location }}</td>
+						<td>{{ $job->stage }}</td>
+						<td>{{ $job->updated_at->diffForHumans() }}</td>
+					</tr>
+				@empty
+					<tr>
+						<td colspan="5">No jobs found</td>
+					</tr>
+				@endforelse
+				</tbody>
+			</table>
 
 		@role('Administrator')
 		    <div class="col-md-10 col-md-offset-1">

@@ -11,7 +11,8 @@
     "twbs/bootstrap": "~3",
     "twbs/bootstrap-sass": "~3",
     "fortawesome/font-awesome": "~4",
-		"cviebrock/eloquent-sluggable": ">=3.0.0-alpha"
+		"cviebrock/eloquent-sluggable": ">=3.0.0-alpha",
+		"barryvdh/laravel-debugbar": "^2.0"
 	},
 	"require-dev": {
     "mockery/mockery": "~0.9",

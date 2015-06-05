@@ -9,4 +9,10 @@ class Contact extends Model
   {
       return $this->morphToMany('App\Tag', 'taggable');
   }
+
+  public function job()
+    {
+        return $this->belongsTo('App\Job');
+    }
+
 }

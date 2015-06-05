@@ -14,8 +14,15 @@ class Company extends Model implements SluggableInterface
       'save_to'    => 'slug',
   );
 
+  protected $fillable = ['name', 'url', 'notes_public', 'notes_private', 'location'];
+
   public function tags()
   {
       return $this->morphToMany('App\Tag', 'taggable');
   }
+
+  public function jobs()
+    {
+        return $this->hasMany('App\Job');
+    }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 
-class ContactController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.

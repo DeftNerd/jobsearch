@@ -16,6 +16,7 @@ class CreateCompaniesTable extends Migration
       {
       $table->increments('id');
       $table->string('name')->unique();
+      $table->string('slug')->nullable();
       $table->string('url')->nullable();
       $table->text('notes_public')->nullable();
       $table->text('notes_private')->nullable();

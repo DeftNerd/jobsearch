@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Job as Job;
 
 /**
  * Class FrontendController
@@ -13,7 +14,8 @@ class FrontendController extends Controller {
 	 */
 	public function index()
 	{
-		return view('frontend.index');
+		$jobs = Job::orderBy('created_at', 'desc')->get();
+		return view('frontend.index', ['jobs' => $jobs]);
 	}
 
 	/**

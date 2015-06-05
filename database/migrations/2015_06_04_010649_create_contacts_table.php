@@ -15,8 +15,8 @@ class CreateContactsTable extends Migration
       Schema::create('contacts', function(Blueprint $table)
        {
          $table->increments('id');
-         $table->integer('application_id')->unsigned();
-         $table->foreign('application_id')->references('id')->on('applications');
+         $table->integer('job_id')->unsigned();
+         $table->foreign('job_id')->references('id')->on('jobs');
          $table->string('type')->nullable();
          $table->string('direction')->nullable();
          $table->text('notes_public')->nullable();
